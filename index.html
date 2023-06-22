@@ -2,10 +2,31 @@
 <html>
 <head>
   <title>Log and Download Data</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <button id="downloadButton">Download Data</button>
+  <br><br>
+  <div class="container">
+    <h1>Data input field</h1>
+    <form id="dataForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telephone">Telephone:</label>
+      <input type="tel" id="telephone" name="telephone" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 
   <script src="script.js"></script>
+  <script src="formData.js"></script>
 </body>
 </html>
